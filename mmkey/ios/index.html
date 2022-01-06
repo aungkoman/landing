@@ -14,25 +14,7 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-  
-  <script>
-    function iOS() {
-      return [
-        'iPad Simulator',
-        'iPhone Simulator',
-        'iPod Simulator',
-        'iPad',
-        'iPhone',
-        'iPod'
-      ].includes(navigator.platform)
-      // iPad on iOS 13 detection
-      || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
-    }
-    if(iOS() == false){
-      window.location.assign('https://mmkey.org');
-    }
-  </script>
-  <base href="./">
+  <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -44,7 +26,7 @@
   <meta name="apple-mobile-web-app-title" content="mm_key">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-  <title>Mm Key</title>
+  <title>mm_key</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
@@ -52,7 +34,7 @@
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
-    var serviceWorkerVersion = '2091109481';
+    var serviceWorkerVersion = '1820684006';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
